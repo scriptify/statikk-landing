@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Statikk - The GatsbyJS Site Creator`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Create GatsbyJS Sites within minutes, not days ⚡️ Choose a template, customize it, export as ZIP. Done. It's free!`,
     author: `@gatsbyjs`,
   },
   plugins: [
