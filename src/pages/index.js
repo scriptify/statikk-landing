@@ -1,21 +1,27 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import Fade from 'react-reveal/Fade';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/Layout';
+import SEO from '../components/seo';
+import Banner from '../components/Banner';
+import HowItWorks from '../components/HowItWorks';
+import Templates from '../components/Templates';
+import Divider from '../components/general/Divider';
+import EmailSignup from '../components/EmailSignup';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Statikk Home" />
+    <Banner />
+    <Fade up>
+      <HowItWorks />
+    </Fade>
+    <Divider />
+    <Fade bottom>
+      <Templates />
+    </Fade>
+    <EmailSignup />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
