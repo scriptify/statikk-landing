@@ -19,7 +19,10 @@ const TemplatesContainer = styled.div`
   }
 `;
 
-const Template = styled.div`
+const Template = styled.a`
+  display: block;
+  text-decoration: none;
+  color: inherit;
   width: 20vw;
   min-width: 250px;
   max-width: 300px;
@@ -76,8 +79,12 @@ const TemplateImageContainerStyled = styled(TemplateImageContainer)`
   height: 80%;
 `;
 
-const TemplateCmp = ({ title, description, label, img, inactive }) => (
-  <Template style={{ opacity: inactive ? '0.75' : 1 }}>
+const TemplateCmp = ({ title, description, label, img, inactive, ...rest }) => (
+  <Template
+    style={{ opacity: inactive ? '0.75' : 1 }}
+    {...rest}
+    rel="noopener noreferrer"
+  >
     <TemplateHeader>
       <TemplateLabel>{label}</TemplateLabel>
       <TemplateName>{title}</TemplateName>
@@ -142,6 +149,7 @@ export default function Templates() {
             description="A portfolio site for developers, designers and tech bloggers."
             label="free"
             img={matePreview}
+            href="https://mate.statikk.io"
           />
           <TemplateCmp
             title="App Land"

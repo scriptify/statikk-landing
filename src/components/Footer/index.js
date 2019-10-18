@@ -34,13 +34,29 @@ export default function Footer() {
   return (
     <FooterContainer>
       <FooterText>
-        Made with 💻 and 💖 by{' '}
-        <a href="https://www.twitter.com/scriptifyjs" target="_blank">
+        Made with{' '}
+        <span role="img" aria-label="laptop">
+          💻
+        </span>{' '}
+        and{' '}
+        <span role="img" aria-label="heart">
+          💖
+        </span>{' '}
+        by{' '}
+        <a
+          href="https://www.twitter.com/scriptifyjs"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           Maximilian Torggler
         </a>
       </FooterText>
       <FooterLinks>
-        <FooterLink href="https://www.twitter.com/scriptifyjs" target="_blank">
+        <FooterLink
+          href="https://www.twitter.com/scriptifyjs"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <TwitterIcon />
         </FooterLink>
       </FooterLinks>
