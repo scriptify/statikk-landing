@@ -71,7 +71,7 @@ const StepTitle = styled.h3`
 const YtVideo = () => (
   <iframe
     style={{ width: '100%', height: '100%' }}
-    src="https://www.youtube.com/embed/RCP8OB2quss"
+    src="https://www.youtube.com/embed/QbT6fpgY210"
     frameBorder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
