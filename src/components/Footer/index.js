@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IoLogoTwitter as TwitterIcon } from 'react-icons/io';
+import {
+  IoLogoTwitter as TwitterIcon,
+  IoMdMail as MailIcon,
+} from 'react-icons/io';
 
 const FooterContainer = styled.footer`
   color: ${props => props.theme.colors.primary};
@@ -28,6 +31,10 @@ const FooterText = styled.p``;
 const FooterLinks = styled.div``;
 const FooterLink = styled.a`
   font-size: 2em;
+  margin-right: ${props => props.theme.spacing[0]};
+  :last-of-type {
+    margin-right: 0;
+  }
 `;
 
 export default function Footer() {
@@ -52,6 +59,9 @@ export default function Footer() {
         </a>
       </FooterText>
       <FooterLinks>
+        <FooterLink href="mailto:hello@statikk.io">
+          <MailIcon />
+        </FooterLink>
         <FooterLink
           href="https://www.twitter.com/scriptifyjs"
           rel="noopener noreferrer"
