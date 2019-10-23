@@ -81,9 +81,17 @@ const TemplateImageContainerStyled = styled(TemplateImageContainer)`
 
 const TemplateCmp = ({ title, description, label, img, inactive, ...rest }) => (
   <Template
-    style={{ opacity: inactive ? '0.75' : 1 }}
+    style={{ opacity: inactive ? '0.6' : 1 }}
     {...rest}
     rel="noopener noreferrer"
+    onClick={() => {
+      if (inactive) {
+        const sectionElem = document.getElementById('newsletter');
+        if (sectionElem) {
+          sectionElem.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }}
   >
     <TemplateHeader>
       <TemplateLabel>{label}</TemplateLabel>

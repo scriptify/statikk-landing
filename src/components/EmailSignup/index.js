@@ -61,7 +61,7 @@ const mailchimpUrl =
 
 export default function EmailSignup() {
   return (
-    <SectionContainer>
+    <SectionContainer id="newsletter">
       <SectionContent>
         <SectionTitle>notify me</SectionTitle>
         <FormContainer>
