@@ -63,7 +63,7 @@ export default function Footer() {
           <MailIcon />
         </FooterLink>
         <FooterLink
-          href="https://www.twitter.com/scriptifyjs"
+          href="https://twitter.com/statikkio"
           rel="noopener noreferrer"
           target="_blank"
         >
